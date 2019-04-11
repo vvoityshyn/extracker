@@ -36,7 +36,10 @@ class App extends Component {
 
     fetch("http://localhost:8080/api/user/register", {
       method: "POST",
-      body: this.state
+      headers: {
+        "content-type" : "application/json"
+      },
+      body: JSON.stringify(this.state)
     });
   } 
 
@@ -48,16 +51,16 @@ class App extends Component {
         <div>
           <form onSubmit={this.onSubmit}>
               <div className="FormField">
-                  <label className="FormField__Label" htmlFor="name">First Name</label>
-                  <input type="text" id="name" className="FormField__Input" placeholder="Enter your full name" name="name" />
+                  <label className="FormField__Label" htmlFor="firstName">First Name</label>
+                  <input type="text" id="firstName" className="FormField__Input" placeholder="Enter your first name" name="firstName" value={this.state.firstName} onChange={this.handleChange} />
               </div>
               <div className="FormField">
-                  <label className="FormField__Label" htmlFor="name">Surname</label>
-                  <input type="text" id="name" className="FormField__Input" placeholder="Enter your full name" name="name" />
+                  <label className="FormField__Label" htmlFor="surname">Surname</label>
+                  <input type="text" id="surname" className="FormField__Input" placeholder="Enter your surname" name="surname" value={this.state.surname} onChange={this.handleChange} />
               </div>
               <div className="FormField">
                   <label className="FormField__Label" htmlFor="password">Password</label>
-                  <input type="password" id="password" className="FormField__Input" placeholder="Enter your password" name="password" />
+                  <input type="password" id="password" className="FormField__Input" placeholder="Enter your password" name="password" value={this.state.password} onChange={this.handleChange} />
               </div>
               <div className="FormField">
                   <label className="FormField__Label" htmlFor="email">Email</label>
