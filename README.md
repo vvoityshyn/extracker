@@ -17,3 +17,4 @@
 1. [Configuring structure of the project (22 Mar 2019)](https://drive.google.com/drive/u/0/folders/1NbPkQVSID6iCbWGC3DI6ixfnIR9Us8hx)
 ## Recommended Resources
 - [Learn React.js by Example - React Sign Up Form Example](https://www.youtube.com/watch?v=56E8b9prPTs)
+- [ReactJS Tutorial - 17 - List Rendering](https://www.youtube.com/watch?v=5s8Ol9uw-yM)
