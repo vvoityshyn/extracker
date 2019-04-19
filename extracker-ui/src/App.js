@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ExpenceList from './pages/expences/ExpenceList';
 
 class App extends Component {
 
@@ -47,7 +48,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Expences Traker</h1>
-
+        <ExpenceList />
         <div>
           <form onSubmit={this.onSubmit}>
               <div className="FormField">
