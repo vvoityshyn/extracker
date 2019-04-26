@@ -18,3 +18,9 @@
 ## Recommended Resources
 - [Learn React.js by Example - React Sign Up Form Example](https://www.youtube.com/watch?v=56E8b9prPTs)
 - [ReactJS Tutorial - 17 - List Rendering](https://www.youtube.com/watch?v=5s8Ol9uw-yM)
+- ReactJS - Main Concepts:
+  - [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+  - [Components and Props](https://reactjs.org/docs/components-and-props.html)
+  - [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+  - [Handling Events](https://reactjs.org/docs/handling-events.html)
+- [Getting started with React Router](https://codeburst.io/getting-started-with-react-router-5c978f70df91)
