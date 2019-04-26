@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
 import ExpenceItem from './ExpenceItem';
 
-
 class ExpenceList extends Component {
 
+    constructor() {
+        super();
+        console.log("[ExpenceList] constructor");
+    }
+
+    componentDidMount() {
+        console.log("[ExpenceList] componentDidMount");
+    }
+    
+    componentWillUnmount() {
+        console.log("[ExpenceList] componentWillUnmount");
+    }
+
     render() {
+        console.log("[ExpenceList] render");
 
         let items = [
             { id : 1, description : "First", amount : 10, currency : "UAH" },
