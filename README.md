@@ -16,6 +16,7 @@
 0. [GitHub repository and SSH keys (videos 1-4)](https://github.com/vvoityshyn/OOP_Labs)
 1. [Configuring structure of the project (22 Mar 2019)](https://drive.google.com/drive/u/0/folders/1NbPkQVSID6iCbWGC3DI6ixfnIR9Us8hx)
 ## Recommended Resources
+### ReactJS
 - [Learn React.js by Example - React Sign Up Form Example](https://www.youtube.com/watch?v=56E8b9prPTs)
 - [ReactJS Tutorial - 17 - List Rendering](https://www.youtube.com/watch?v=5s8Ol9uw-yM)
 - ReactJS - Main Concepts:
@@ -24,3 +25,5 @@
   - [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
   - [Handling Events](https://reactjs.org/docs/handling-events.html)
 - [Getting started with React Router](https://codeburst.io/getting-started-with-react-router-5c978f70df91)
+### Cloud
+- [Deploy ReactJS App with S3 Static Hosting](https://medium.com/@serverlessguru/deploy-reactjs-app-with-s3-static-hosting-f640cb49d7e6)
