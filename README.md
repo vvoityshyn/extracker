@@ -1,4 +1,5 @@
 # Expences Tracker
+Development environment: http://extracker-ui.s3-website.eu-central-1.amazonaws.com/
 ## Required Tools
 - UI
   - Visual Studio Code (https://code.visualstudio.com/)
