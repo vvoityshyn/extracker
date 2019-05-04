@@ -11,6 +11,8 @@ Development environment: http://extracker-ui.s3-website.eu-central-1.amazonaws.c
 - Database
   - PostgreSQL (https://www.postgresql.org/)
   - pgAdmin (https://www.pgadmin.org)
+- Cloud
+  - AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide/install-windows.html#install-msi-on-windows)
 - Other
   - GIT (https://git-scm.com/)
 ## Video Recordings
