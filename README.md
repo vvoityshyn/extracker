@@ -26,4 +26,5 @@
   - [Handling Events](https://reactjs.org/docs/handling-events.html)
 - [Getting started with React Router](https://codeburst.io/getting-started-with-react-router-5c978f70df91)
 ### Cloud
+- [Install the AWS CLI on Windows](https://docs.aws.amazon.com/cli/latest/userguide/install-windows.html)
 - [Deploy ReactJS App with S3 Static Hosting](https://medium.com/@serverlessguru/deploy-reactjs-app-with-s3-static-hosting-f640cb49d7e6)
