@@ -36,6 +36,7 @@ class ExpenceList extends Component {
                         <th>Amount</th>
                         <th>currency</th>
                         <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>

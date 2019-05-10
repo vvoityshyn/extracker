@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 
 class ExpenceItem extends Component {
@@ -51,6 +52,7 @@ class ExpenceItem extends Component {
                 <td>{ item.amount }</td>
                 <td>{ item.currency }</td>
                 <td><button onClick={(e) => this.onRemove(item.id, e)}>Remove</button></td>
+                <td><Link to={"/expense/" + item.id}>Details</Link></td>
             </tr>
         );
     }

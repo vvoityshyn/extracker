@@ -4,6 +4,7 @@ import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import ExpenceList from './pages/expences/ExpenceList';
 import RegistrationForm from './pages/account/RegistrationForm';
 import Notfound from './pages/common/NotFound';
+import ExpenseDetails from './pages/expences/ExpenseDetails';
 
 class App extends Component {
 
@@ -33,6 +34,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={ExpenceList} />
           <Route path="/register" component={RegistrationForm} />
+          <Route path='/expense/:expenseId' component={ExpenseDetails} />
           <Route component={Notfound} />          
         </Switch>
       </div>
