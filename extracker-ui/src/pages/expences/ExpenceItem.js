@@ -6,6 +6,8 @@ class ExpenceItem extends Component {
     constructor() {
         super();
         console.log("[ExpenceItem] constructor");
+
+        this.onRemove = this.onRemove.bind(this);
     }
 
     componentDidMount() {
@@ -15,6 +17,28 @@ class ExpenceItem extends Component {
     componentWillUnmount() {
         console.log("[ExpenceItem] componentWillUnmount");
     }
+
+    onRemove(id, e) {
+        e.preventDefault();
+    
+        console.log(`[ExpenceItem] onRemove - ${id}`);
+        // const request = {
+        //     expenceItemId : id
+        // };
+
+        fetch(`http://localhost:8080/api/expense/${id}/remove`, {
+          method: "PUT",
+          headers: {
+            "content-type" : "application/json"
+          }
+          //body: JSON.stringify(request)
+        }).then(function(response) {
+            console.log(`[ExpenceItem] onRemove - fetch.then(${response})`);
+            
+        }).catch(function(error) {
+            console.log(`[ExpenceItem] onRemove - fetch.catch(${error})`);
+        });
+      } 
 
     render() {
         console.log("[ExpenceItem] render");        
@@ -26,6 +50,7 @@ class ExpenceItem extends Component {
                 <td>{ item.description }</td>
                 <td>{ item.amount }</td>
                 <td>{ item.currency }</td>
+                <td><button onClick={(e) => this.onRemove(item.id, e)}>Remove</button></td>
             </tr>
         );
     }
