@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import ExpenceList from './pages/expences/ExpenceList';
 import RegistrationForm from './pages/account/RegistrationForm';
+import LoginForm from './pages/account/LoginForm';
 import Notfound from './pages/common/NotFound';
 import ExpenseDetails from './pages/expences/ExpenseDetails';
 
@@ -29,11 +30,17 @@ class App extends Component {
       <div className="App">
         <h1>Expences Traker</h1>
         <div>
-          <Link to="/register">Register</Link>
+          <div>
+            <Link to="/register">Register</Link>
+          </div>
+          <div>
+            <Link to="/login">Login</Link>
+          </div>
         </div>
         <Switch>
           <Route exact path="/" component={ExpenceList} />
           <Route path="/register" component={RegistrationForm} />
+          <Route path="/login" component={LoginForm} />
           <Route path='/expense/:expenseId' component={ExpenseDetails} />
           <Route component={Notfound} />          
         </Switch>

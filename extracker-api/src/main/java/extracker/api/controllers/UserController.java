@@ -1,6 +1,8 @@
 package extracker.api.controllers;
 
 import extracker.api.entities.User;
+import extracker.api.models.AuthRequest;
+import extracker.api.models.AuthResponse;
 import extracker.api.models.UserRegRequest;
 import extracker.api.models.UserRegResponse;
 import extracker.api.repositories.UserRepository;
@@ -36,6 +38,12 @@ public class UserController {
         regResponse.setUserId(insertedUser.getId());
 
         return regResponse;
+    }
+
+    @PostMapping("/api/user/auth")
+    public AuthResponse authenticate(@RequestBody AuthRequest request) {
+
+        return new AuthResponse();
     }
 
 }
